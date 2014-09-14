@@ -1,5 +1,5 @@
-# Highcharts Themer
+# Kameleon
 
-A sandbox for applying custom color palette themes to Highcharts
+Shifing colors
 
 Auto commited via [Mixture](http://mixture.io)
