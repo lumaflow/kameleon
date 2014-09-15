@@ -20,8 +20,6 @@
                     <section class="top-bar-section">
                         <!-- Right Nav Section -->
                         <ul class="right">
-                            <li><a href="#data-visualization">Data Visualization</a></li>
-                            <li><a href="#appendix">Appendix</a></li>
                             <li class="divider"></li>
                             <li class="has-dropdown">
                                 <a href="#">Choose Theme</a>
@@ -36,12 +34,20 @@
                 </nav>
             </div><!--/ Fixed Top Bar -->
 
+	    <div data-magellan-expedition="fixed">
+                <dl class="sub-nav">
+                    <dd data-magellan-arrival="palette"><a href="#palette">Palette</a></dd>
+                    <dd data-magellan-arrival="data-visualization"><a href="#data-visualization">Data Visualization</a></dd>
+                </dl>
+            </div><!--/ Magellan Sticky Navigation -->
+
 		
 	<div class="row">
       <div class="large-12 columns">
         <div class="row">
           <div class="small-12 medium-12 large-12 column">
-            <h2>Palette 1</h3>
+            <a name="palette"></a>
+            <h2 data-magellan-destination="palette">Palette 1</h3>
             <div class="palette-container">
               <div class="row">
                 <!-- Orange -->
@@ -73,7 +79,7 @@
                   </div>
                   <div class="color-step _500">
                     <p class="name left">500</p>
-                    <p class="hex right">#FF661A</p>
+                    <p class="hex right">#FF661C</p>
                   </div>
                   <div class="color-step _600 white">
                     <p class="name left">600</p>
@@ -353,7 +359,8 @@
 
 		    <div class="row">
       <div class="small-12 column">
-        <a name="data-visualization"></a>
+        <hr />
+        <p><a name="data-visualization"></a></p>
         <h2 data-magellan-destination="data-visualization">Data Visualization</h2>
       </div>
     </div>
@@ -409,7 +416,8 @@ Series E 3	1%
 		<!-- Begin Appendix -->
 <div class="row">
     <div class="small-12 columns">
-        <a name="appendix"></a>
+        <p><a name="appendix"></a></p>
+<hr />
         <h2 data-magellan-destination="appendix">Appendix</h2>
         <h6>Related Links</h6>
         <ul>
@@ -426,10 +434,16 @@ Series E 3	1%
 <script src="//code.highcharts.com/highcharts.js"></script>
 <script src="//code.highcharts.com/modules/data.js"></script>
 <script src="//code.highcharts.com/modules/drilldown.js"></script>
-<script src="../assets/js/vendor/highcharts/palettes.min.js"></script>
 <script>
-$(document).foundation();
+$(document).foundation({
+"magellan-expedition": {
+    fixed_top: 45,
+}
+});
 </script>
+
+  		
+    <script src="../assets/js/vendor/highcharts/palettes.min.js"></script>
 
 	</body>
 </html>

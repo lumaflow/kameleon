@@ -19,8 +19,6 @@
                 <section class="top-bar-section">
                     <!-- Right Nav Section -->
                     <ul class="right">
-                        <li><a href="#data-visualization">Data Visualization</a></li>
-                        <li><a href="#appendix">Appendix</a></li>
                         <li class="divider"></li>
                         <li class="has-dropdown">
                             <a href="#">Choose Theme</a>
@@ -34,57 +32,58 @@
                 </section>
             </nav>
         </div><!--/ Fixed Top Bar -->
-		 
+        <div class="marquee">
+           
 	<div class="row">
       <div class="large-12 columns">
-        <h1 class="text-center">Kameleon</h1>
+        <h1 class="text-center">Getting Color Right</h1>
       </div>
     </div>
 
     <div class="row">
-      <div class="large-12 columns">
-        <h3 class="text-center">Color palette exploration</h3>
-        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-        <p>Once you've exhausted the fun in this document, you should check out:</p>
-        <div class="row">
+      <div class="large-12 medium-12 columns intro">
+        <div class="panel">
+          <div class="row">
+            <h3 class="text-center">Why should we care?</h3>
+            <hr />
             <div class="large-4 medium-4 columns">
-                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+              <h5>Cynthia Brewer</h5>
+              <p>&ldquo;Appropriate use of color for data display allows interrelationships and patterns within data to be easily observed. The careless use of color will obscure these patterns.&rdquo;</p>
+              <p><strong><a href="http://www.personal.psu.edu/faculty/c/a/cab38/ColorSch/SchHome.html" target="_blank">Color Use Guidelines for Mapping and Visualization</a></strong></p>
             </div>
             <div class="large-4 medium-4 columns">
-                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+              <h5>Stephen Few</h5>
+              <p>&ldquo;Don’t use color to decorate the display. Dressing up a graph might serve a purpose in advertising, but it only distracts people from what’s important—the data—in an information display.&rdquo;</p>
+              <p><strong><a href="http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf" target="_blank">Practical Rules for Using Color in Charts</a></strong></p>
             </div>
             <div class="large-4 medium-4 columns">
-                <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+              <h5>Maureen Stone</h5>
+              <p>&ldquo;Color used well can enhance and clarify a presentation. Color used poorly will obscure, muddle and confuse&#133;using color well in information display is essentially about function.&rdquo;</p>
+              <p><strong><a href="http://www.perceptualedge.com/articles/b-eye/choosing_colors.pdf" target="_blank">Choosing Colors for Data Visualization</a></strong></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-12 medium-12 columns text-center">
+              <a href="palettes/palette-1" class="large button round">Let&rsquo;s Begin</a>
             </div>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="large-12 medium-12 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-                <div class="panel">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-            <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div>
 
+		</div>
   		<script src="assets/js/vendor/jquery.min.js"></script>
 <script src="assets/js/foundation.min.js"></script>
 <script src="//code.highcharts.com/highcharts.js"></script>
 <script src="//code.highcharts.com/modules/data.js"></script>
 <script src="//code.highcharts.com/modules/drilldown.js"></script>
-<script src="assets/js/vendor/highcharts/palettes.min.js"></script>
 <script>
-$(document).foundation();
+$(document).foundation({
+"magellan-expedition": {
+    fixed_top: 45,
+}
+});
 </script>
 
 	</body>
